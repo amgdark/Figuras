@@ -21,4 +21,4 @@ script:
   #- coverage report -m
   #- nosetests --with-doctest -s sched
   #- python manage.py runserver & lettuce tests
-   - lettuce test
+   - lettuce AceptanceTest

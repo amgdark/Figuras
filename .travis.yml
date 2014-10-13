@@ -21,7 +21,7 @@ script:
   #- coverage report -m
   #- nosetests --with-doctest -s sched
   #- python manage.py runserver & lettuce tests
-   º- autopep8 -ir *
+   - autopep8 -ir *
    - flake8 --max-complexity=3 *
    - lettuce AceptanceTest
    - cd UnitTest

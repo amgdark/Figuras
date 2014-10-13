@@ -22,7 +22,7 @@ script:
   #- nosetests --with-doctest -s sched
   #- python manage.py runserver & lettuce tests
    - lettuce AceptanceTest
-   - cd UniTest
+   - cd UnitTest
    - python TestFiguras.py
    - coverage run --branch TestFiguras.py
    - coverage report -m

@@ -13,8 +13,12 @@ install: "pip install -r requirements.txt"
 before_script: 
   #- "flake8 --ignore=F403 manage.py sched tests/features"
   #- "flake8 --max-complexity=5 --ignore=F403 manage.py sched tests/features"
+<<<<<<< HEAD
    - autopep8 -ir *
    - flake8 --max-complexity=3 --exclude='*.txt' --max-line-length=200 **
+=======
+   
+>>>>>>> bb2dfc55bae806ebee6b39071ae81c43c925bdc3
 
 # command to run tests
 script: 
@@ -22,6 +26,8 @@ script:
   #- coverage report -m
   #- nosetests --with-doctest -s sched
   #- python manage.py runserver & lettuce tests
+   - autopep8 -ir *
+   - flake8 --max-complexity=3 *
    - lettuce AceptanceTest
    - cd UnitTest
    - python TestFiguras.py

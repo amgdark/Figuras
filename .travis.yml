@@ -14,7 +14,7 @@ before_script:
   #- "flake8 --ignore=F403 manage.py sched tests/features"
   #- "flake8 --max-complexity=5 --ignore=F403 manage.py sched tests/features"
    - autopep8 -ir *
-   - flake8 --max-complexity=3 *
+   - flake8 --max-complexity=3 --exclude='*.txt' --max-line-length=200 **
 
 # command to run tests
 script: 

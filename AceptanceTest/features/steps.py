@@ -1,12 +1,12 @@
 
 # -*- coding: utf-8 -*-
-from lettuce import *
+from lettuce import world, step
 from app.Figura import Figura
 
 
 @step(u'Given: Que la figura es un "([^"]*)" y el lado es "([^"]*)"')
 def given_que_la_figura_es_un_cuadrado_y_el_lado_es_6(step, figura, lado):
-    world.parametros=[figura,int(lado), 0, 0]
+    world.parametros = [figura, int(lado), 0, 0]
 
 
 @step(u'when realizó el cálculo')

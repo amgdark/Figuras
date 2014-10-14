@@ -1,11 +1,11 @@
 class Figura:
 
     def __init__(self, args):
-        self.figura=args[0]
+        self.figura = args[0]
         self.parametros = args[1:]
 
     def getArea(self):
-        figuras={"Cuadrado": self.cuadrado(),
+        figuras = {"Cuadrado": self.cuadrado(),
                    "Triangulo": self.triangulo(),
                    "Circulo": self.circulo(),
                    "Trapecio": self.trapecio()}

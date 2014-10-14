@@ -22,7 +22,7 @@ script:
   #- nosetests --with-doctest -s sched
   #- python manage.py runserver & lettuce tests
    - autopep8 -ir *
-   - flake8 --max-complexity=3 --exclude=*.txt, *.md --max-line-length=200 *
+   - flake8 --max-complexity=3 --exclude='*.txt', '*.md' --max-line-length=200 *
    - lettuce AceptanceTest
    - cd UnitTest
    - python TestFiguras.py -v

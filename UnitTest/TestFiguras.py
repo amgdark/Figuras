@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import unittest
 import sys
-sys.path.append('../')
+sys.path.append('..')
 from app.Figura import Figura
 
 

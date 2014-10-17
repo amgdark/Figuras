@@ -25,7 +25,7 @@ script:
    - flake8 --max-complexity=3 --exclude=*.txt,*.md --max-line-length=200 *
    - lettuce AceptanceTest
    - cd UnitTest
-   - python TestFiguras TestFiguras2 -v
+   - python -m unittest TestFiguras TestFiguras2 -v
    - coverage run --branch TestFiguras.py
    - coverage report -m
    - coverage run --branch TestFiguras2.py

@@ -16,8 +16,6 @@ before_script:
   
 # command to run tests
 script: 
-   - autopep8 -ir *
-   - flake8 --max-complexity=3 --exclude=*.txt,*.md --max-line-length=200 *.py
    - lettuce AceptanceTest
    - cd UnitTest
    - python -m unittest TestFiguras TestFiguras2

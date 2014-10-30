@@ -14,7 +14,6 @@ before_script:
    - autopep8 -ir *
    - flake8 --max-complexity=3 --exclude=*.txt,*.md,*.sh --max-line-length=200 *
   
-
 # command to run tests
 script: 
    - autopep8 -ir *

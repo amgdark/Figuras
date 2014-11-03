@@ -26,10 +26,10 @@ class TestSelenium(unittest.TestCase):
 
     def _test_has_failed(self):
         # for 3.4. In 3.3, can just use self._outcomeForDoCleanups.success:
-        for method, error in self._outcome.errors:
-            if error:
-                return True
-        return False
+        #for method, error in self._outcome.errors:
+         #   if error:
+        return True
+#        return False
         
     def take_screenshot(self):
         filename = self._get_filename() + '.png'

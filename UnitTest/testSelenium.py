@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 import os, unittest
 from selenium import webdriver
 from datetime import datetime

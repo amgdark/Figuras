@@ -23,4 +23,4 @@ script:
    - coverage report -m
    - coverage run --branch TestFiguras2.py
    - coverage report -m
-   - python testSelenium.py
+#   - python testSelenium.py
